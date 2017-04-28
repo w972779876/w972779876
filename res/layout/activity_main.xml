@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+      <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:background="@color/dark">
+  
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:text="零部件"
+         android:textSize="20dp" 
+         android:textColor="#ffffff"/>
+ 
+ 	</RelativeLayout>
+  
+      <android.support.v4.view.ViewPager
+         android:id="@+id/vp_content"
+         android:layout_width="match_parent"
+         android:background="#ffffff"
+         android:layout_height="0dp"
+         android:layout_weight="1" >
+     </android.support.v4.view.ViewPager>
+ 
+    <LinearLayout 
+      android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#333333" >
+  
+      <LinearLayout
+         android:id="@+id/ll_main_home"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+         android:layout_weight="1"
+          android:gravity="center"
+        android:orientation="vertical" >
+ 
+          <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home" />
+  
+          <TextView
+             android:id="@+id/tv_home"
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+             android:text="首页"
+              android:textColor="#1B940A"
+             android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/ll_main_product"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical" >
+  
+          <ImageView
+              android:id="@+id/iv_address"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/part1" />
+  
+          <TextView
+              android:id="@+id/tv_address"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp"
+              android:text="产品"
+              android:textColor="#ffffff"
+              android:textStyle="bold" />
+      </LinearLayout>
+  
+      <LinearLayout
+          android:id="@+id/ll_main_save"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical" >
+  
+          <ImageView
+             android:id="@+id/iv_friend"
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:src="@drawable/favorite" />
+
+          <TextView
+              android:id="@+id/tv_friend"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp"
+              android:text="我的"
+              android:textColor="#ffffff"
+              android:textStyle="bold" />
+      </LinearLayout>
+  
+      <LinearLayout
+          android:id="@+id/ll_mian_setting"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical" >
+  
+          <ImageView
+              android:id="@+id/iv_setting"
+              android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:src="@drawable/main_setting" />
+  
+          <TextView
+              android:id="@+id/tv_setting"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp"
+              android:text="设置"
+              android:textColor="#ffffff"
+             android:textStyle="bold" />
+     </LinearLayout>
+ 
+ </LinearLayout>
+ 
+ </LinearLayout>
